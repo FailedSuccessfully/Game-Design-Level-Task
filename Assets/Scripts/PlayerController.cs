@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
         Vector3 currPos = transform.position;
         Vector3 newPos = currPos + movement;
         rb.MovePosition(newPos);
+        bUp = bDown = 0;
     }
 
     void Rotation() {

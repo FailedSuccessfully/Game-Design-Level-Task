@@ -11,7 +11,7 @@ public class CameraDirector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 4f);
+        this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.z - 3f);
         offset = transform.position - player.transform.position;
     }
 
